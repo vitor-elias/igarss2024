@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "igarss"
+version = "0.1.0"
+description = "Graph-based fault detection and localization in InSAR data"
+authors = ["Vitor Elias <vitor.elias@ntnu.no>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+numpy = "^1.26.2"
+jupyter = "^1.0.0"
+pandas = "^2.1.4"
+torch = "^2.1.1"
+torch-geometric = "^2.4.0"
+optuna = "^3.5.0"
+matplotlib = "^3.8.2"
+plotly = "^5.18.0"
+scikit-learn = "^1.3.2"
+scipy = "^1.11.4"
+pygsp = "^0.5.1"
+pyprojroot = "^0.3.0"
+jupyterlab = "^4.0.9"
+ipykernel = "^6.27.1"
+torchvision = "^0.16.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
