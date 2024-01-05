@@ -64,7 +64,17 @@ pip install torch-sparse==0.6.17 torch-scatter==2.1.1 torchmetrics==1.0.3
 
 ## Folder and files
 
-- `notebooks/`: Jupyter notebooks for different experiments.
-    - `synthetic_experiments.ipynb`: experiments using synthetic graphs and data
+- `notebooks/`: Jupyter notebooks for experiments.
+    - `hyperparameter_tuning.ipynb`: Run optuna trials to find best hyperparameters for each method
+    - `testing.ipynb`: Loads best paramaters and runs testing to compute final AUC values
     - `utils.ipynb`: definitions for useful supporting functions
+
+## Usage
+
+1. In `hyperparameter_tuning.ipynb`, chose anomaly detection method.
+2. Specify experiment type as 'random' or 'synthetic'
+3. Run the corresponding cell for hyperparamter tuning. Results are saved in /outputs/{method_name}/  
+4. In `testing.ipynb`, run the desired method
+5. AUC values are saved in /outputs/testing/
+
 
